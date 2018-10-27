@@ -1,0 +1,10 @@
+package com.isa.java.tools.lombok.annotations.nonnull;
+
+import lombok.NonNull;
+
+public class EmployeeService {
+
+    public void increaseSalary(@NonNull String name) {
+
+    }
+}
