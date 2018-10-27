@@ -6,5 +6,7 @@ public class EmployeeServiceDelomboked {
         if (name == null) {
             throw new NullPointerException("name");
         }
+
+        System.out.println(name);
     }
 }
