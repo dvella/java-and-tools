@@ -1,4 +1,4 @@
-package com.isa.java.tools.lombok.annotations.equalsandhashcode;
+package com.isa.java.tools.lombok.annotations.equalsandhashcode.basic;
 
 import lombok.EqualsAndHashCode;
 

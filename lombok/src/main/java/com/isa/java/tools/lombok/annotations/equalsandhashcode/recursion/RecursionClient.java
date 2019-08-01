@@ -1,6 +1,6 @@
-package com.isa.java.tools.lombok.annotations.equalsandhashcode.exclude;
+package com.isa.java.tools.lombok.annotations.equalsandhashcode.recursion;
 
-public class RecursionTest {
+public class RecursionClient {
 
     public static void main(String[] args) {
         Manager manager = new Manager();

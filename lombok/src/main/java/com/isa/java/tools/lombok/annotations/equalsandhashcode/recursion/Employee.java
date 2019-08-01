@@ -1,4 +1,4 @@
-package com.isa.java.tools.lombok.annotations.equalsandhashcode.exclude;
+package com.isa.java.tools.lombok.annotations.equalsandhashcode.recursion;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

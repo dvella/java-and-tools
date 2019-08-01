@@ -1,11 +1,12 @@
-package com.isa.java.tools.lombok.annotations.equalsandhashcode;
+package com.isa.java.tools.lombok.annotations.equalsandhashcode.include.fieldlevel;
 
 public class EmployeeDelomboked {
 
     private String name;
+    private int age;
     private int salary;
 
-    public boolean equals(Object o) {
+    public boolean equals(final Object o) {
         if (o == this) {
             return true;
         }
@@ -21,10 +22,14 @@ public class EmployeeDelomboked {
         if (this$name == null ? other$name != null : !this$name.equals(other$name)) {
             return false;
         }
-        if (this.salary != other.salary) {
+        if (this.age != other.age) {
             return false;
         }
         return true;
+    }
+
+    protected boolean canEqual(final Object other) {
+        return other instanceof EmployeeDelomboked;
     }
 
     public int hashCode() {
@@ -32,11 +37,7 @@ public class EmployeeDelomboked {
         int result = 1;
         final Object $name = this.name;
         result = result * PRIME + ($name == null ? 43 : $name.hashCode());
-        result = result * PRIME + this.salary;
+        result = result * PRIME + this.age;
         return result;
-    }
-
-    protected boolean canEqual(Object other) {
-        return other instanceof EmployeeDelomboked;
     }
 }
