@@ -1,13 +1,15 @@
-package com.isa.java.tools.lombok.annotations.value;
+package com.isa.java.tools.lombok.annotations.data.staticconstructor;
 
-public final class EmployeeDelomboked {
+public class EmployeeDelomboked {
 
-    private final String name;
-    private final int salary;
+    private String name;
+    private int salary;
 
-    public EmployeeDelomboked(String name, int salary) {
-        this.name = name;
-        this.salary = salary;
+    private EmployeeDelomboked() {
+    }
+
+    public static EmployeeDelomboked of() {
+        return new EmployeeDelomboked();
     }
 
     public String getName() {
@@ -18,6 +20,14 @@ public final class EmployeeDelomboked {
         return this.salary;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
     public boolean equals(final Object o) {
         if (o == this) {
             return true;
@@ -26,6 +36,9 @@ public final class EmployeeDelomboked {
             return false;
         }
         final EmployeeDelomboked other = (EmployeeDelomboked) o;
+        if (!other.canEqual((Object) this)) {
+            return false;
+        }
         final Object this$name = this.getName();
         final Object other$name = other.getName();
         if (this$name == null ? other$name != null : !this$name.equals(other$name)) {
@@ -35,6 +48,10 @@ public final class EmployeeDelomboked {
             return false;
         }
         return true;
+    }
+
+    protected boolean canEqual(final Object other) {
+        return other instanceof EmployeeDelomboked;
     }
 
     public int hashCode() {
@@ -47,6 +64,7 @@ public final class EmployeeDelomboked {
     }
 
     public String toString() {
-        return "Employee(name=" + this.getName() + ", salary=" + this.getSalary() + ")";
+        return "EmployeeDelomboked(name=" + this.getName() + ", salary=" + this.getSalary() + ")";
     }
 }
+

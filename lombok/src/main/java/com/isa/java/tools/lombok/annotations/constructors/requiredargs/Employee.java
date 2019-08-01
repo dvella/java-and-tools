@@ -8,3 +8,10 @@ public class Employee {
     private final String name;
     private int salary;
 }
+
+@RequiredArgsConstructor(staticName = "of")
+class Department {
+
+    private final String location;
+    private final String employeeNumber;
+}

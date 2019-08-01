@@ -1,13 +1,17 @@
-package com.isa.java.tools.lombok.annotations.value;
+package com.isa.java.tools.lombok.annotations.value.staticconstructor;
 
 public final class EmployeeDelomboked {
 
     private final String name;
     private final int salary;
 
-    public EmployeeDelomboked(String name, int salary) {
+    private EmployeeDelomboked(String name, int salary) {
         this.name = name;
         this.salary = salary;
+    }
+
+    public static EmployeeDelomboked of(String name, int salary) {
+        return new EmployeeDelomboked(name, salary);
     }
 
     public String getName() {
