@@ -9,6 +9,6 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true, chain = true)
 public class Account {
 
-    private String name;
-    private int salary;
+    private String username;
+    private int password;
 }
