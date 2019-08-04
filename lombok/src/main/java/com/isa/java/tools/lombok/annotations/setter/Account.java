@@ -5,6 +5,6 @@ import lombok.Setter;
 @Setter
 public class Account {
 
-    private String name;
-    private int salary;
+    private String username;
+    private String password;
 }

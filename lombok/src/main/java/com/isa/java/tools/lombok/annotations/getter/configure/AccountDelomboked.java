@@ -3,13 +3,13 @@ package com.isa.java.tools.lombok.annotations.getter.configure;
 public class AccountDelomboked {
 
     private String username;
-    private int password;
+    private String password;
 
     public String username() {
         return this.username;
     }
 
-    public int password() {
+    public String password() {
         return this.password;
     }
 
@@ -18,7 +18,7 @@ public class AccountDelomboked {
         return this;
     }
 
-    public AccountDelomboked password(int password) {
+    public AccountDelomboked password(String password) {
         this.password = password;
         return this;
     }

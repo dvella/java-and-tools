@@ -8,5 +8,5 @@ import lombok.Setter;
 public class Account {
 
     private String username;
-    private int password;
+    private String password;
 }

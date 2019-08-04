@@ -11,5 +11,5 @@ public class Account {
 
     @Getter
     @Setter
-    private int password;
+    private String password;
 }
