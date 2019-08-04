@@ -1,4 +1,4 @@
-package com.isa.java.tools.lombok.annotations.equalsandhashcode.callSuper;
+package com.isa.java.tools.lombok.annotations.equalsandhashcode.inheritance;
 
 public class EmployeeDelomboked extends Citizen {
 

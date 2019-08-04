@@ -1,4 +1,4 @@
-package com.isa.java.tools.lombok.annotations.tostring.exclude;
+package com.isa.java.tools.lombok.annotations.tostring.recursion;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,9 +7,9 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString(exclude = "manager")
-public class Employee {
+public class Developer {
 
     private String name;
-    private int salary;
+    private String language;
     private Manager manager;
 }
