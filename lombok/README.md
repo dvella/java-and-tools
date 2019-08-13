@@ -9,3 +9,4 @@ Some examples are detailed on following blog posts:
 - [Lombok @Getter and @Setter](http://www.javabyexamples.com/delombok-getter-and-setter/)
 - [Lombok @AllArgsConstructor, @NoArgsContstructor and @RequiredArgsConstructor](http://www.javabyexamples.com/delombok-allargsconstructor-noargsconstructor-and-requiredargsconstructor/)
 - [Lombok @Data and @Value](http://www.javabyexamples.com/lombok-data-and-value-for-fast-pojos/)
+- [Lombok @SneakyThrows](http://www.javabyexamples.com/lombok-sneakythrows/)
