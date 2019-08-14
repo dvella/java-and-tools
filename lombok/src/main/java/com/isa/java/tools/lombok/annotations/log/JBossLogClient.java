@@ -1,6 +1,5 @@
 package com.isa.java.tools.lombok.annotations.log;
 
-import java.time.Instant;
 import lombok.extern.jbosslog.JBossLog;
 
 @JBossLog
